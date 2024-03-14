@@ -33,7 +33,7 @@ export default function Perfil() {
     } else {
       router.push('/pagError');
     }
-  }, [recibeId, router]);
+  }, [router]);
 
   const recibeId = () => {
     const userId = sessionStorage.getItem('token');
