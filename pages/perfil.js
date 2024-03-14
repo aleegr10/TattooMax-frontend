@@ -25,7 +25,7 @@ export default function Perfil() {
     fetchCitas();
     fetchOpiniones();
     recibeId();
-    // fetchArtists();
+    recibeUserLog();
     
     const userRole = localStorage.getItem('userRole');
     if (userRole === 'user') {
@@ -33,7 +33,7 @@ export default function Perfil() {
     } else {
       router.push('/pagError');
     }
-  }, []);
+  }, [recibeId, router]);
 
   const recibeId = () => {
     const userId = sessionStorage.getItem('token');

@@ -18,7 +18,7 @@ const Login = () => {
 
     useEffect(() => {
         recibeIsLog();
-    }, []);
+    }, [recibeIsLog]);
 
     const recibeIsLog = () => {
         const idUser = sessionStorage.getItem('token');

@@ -27,7 +27,7 @@ export default function PerfilAdmin() {
       router.push('/pagError');
     }
     recibeId();
-  }, []);
+  }, [recibeId, router]);
 
   const openAddCita = () => setIsCitaOpen(true);
   const closeAddCita = () => setIsCitaOpen(false);
