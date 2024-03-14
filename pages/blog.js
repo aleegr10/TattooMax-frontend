@@ -7,9 +7,6 @@ import imagenEspalda from '../public/blog/imagenEspalda.jpg';
 import imagenBrazo from '../public/blog/imagenBrazo.jpg';
 
 export default function Blog() {
-  useEffect(() => {
-  }, []);
-
   return (
     <div className={style.body}>
       <div>

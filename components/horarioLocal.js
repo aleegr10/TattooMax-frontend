@@ -10,7 +10,7 @@ const HorarioLocal = () => {
             .then(data => {
                 setHorario(data);
             });
-    }, []);
+    });
 
     return (
         <div>

@@ -17,7 +17,7 @@ const Artista = ({ name, id }) => {
         fetchOpiniones();
         fetchHorario();
         fetchArtist();
-    }, [fetchArtist, fetchHorario, fetchOpiniones]);
+    });
     
 
     const dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];

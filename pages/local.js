@@ -13,7 +13,7 @@ export default function Local() {
 
     useEffect(() => {
         recibeUserLog();
-    }, []);
+    });
 
     async function recibeUserLog() {
         userId = sessionStorage.getItem('token');
