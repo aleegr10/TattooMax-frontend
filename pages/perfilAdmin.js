@@ -35,25 +35,25 @@ export default function PerfilAdmin() {
   };
 
   const fetchUser = async (userId) => {
-    const response = await fetch('https://tattoomax-backend-9bd8.onrender.com/users');
+    const response = await fetch('https://tattoomaxbackend.onrender.com/users');
     const data = await response.json();
     setUser(data.find((usuario) => usuario._id === userId));
   };
 
   const fetchUsers = async () => {
-    const response = await fetch('https://tattoomax-backend-9bd8.onrender.com/users');
+    const response = await fetch('https://tattoomaxbackend.onrender.com/users');
     const data = await response.json();
     setUsers(data);
   }
 
   const fetchCitas = async () => {
-    const response = await fetch('https://tattoomax-backend-9bd8.onrender.com/citas');
+    const response = await fetch('https://tattoomaxbackend.onrender.com/citas');
     const data = await response.json();
     setCitas(data);
   }
 
   const removeUser = ({userId, onClose}) => {
-    fetch('https://tattoomax-backend-9bd8.onrender.com/users/'+userId, {
+    fetch('https://tattoomaxbackend.onrender.com/users/'+userId, {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
     });

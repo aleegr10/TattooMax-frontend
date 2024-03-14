@@ -63,7 +63,7 @@ const EditaPass = ({ user, onClose }) => {
         if (validateForm()) {
             if (pass2 === pass3) {
                 try {
-                    const response = await fetch('https://tattoomax-backend-9bd8.onrender.com/users/signin', {
+                    const response = await fetch('https://tattoomaxbackend.onrender.com/users/signin', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ const EditaPass = ({ user, onClose }) => {
                         return;
                     }
 
-                    const updateResponse = await fetch('https://tattoomax-backend-9bd8.onrender.com/users/' + user._id, {
+                    const updateResponse = await fetch('https://tattoomaxbackend.onrender.com/users/' + user._id, {
                         method: 'PUT',
                         headers: {
                             'Content-Type': 'application/json',

@@ -76,7 +76,7 @@ const EditaDatos = ({user, onClose }) => {
   async function submit(){
     if(validateForm()){
       try {
-        const response = await fetch('https://tattoomax-backend-9bd8.onrender.com/users/'+user._id, {
+        const response = await fetch('https://tattoomaxbackend.onrender.com/users/'+user._id, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

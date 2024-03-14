@@ -16,7 +16,7 @@ export default function Local() {
 
     async function recibeUserLog() {
         userId = sessionStorage.getItem('token');
-        const data = await fetch('https://tattoomax-backend-9bd8.onrender.com/users')
+        const data = await fetch('https://tattoomaxbackend.onrender.com/users')
             .then(res => res.json())
             .then(data => setUserLog(data.find(user => user._id === userId)));
         return data;
@@ -31,7 +31,7 @@ export default function Local() {
             consulta: document.getElementById('consulta').value
         };
 
-        fetch('https://tattoomax-backend-9bd8.onrender.com/consultas/add', {
+        fetch('https://tattoomaxbackend.onrender.com/consultas/add', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(datos)

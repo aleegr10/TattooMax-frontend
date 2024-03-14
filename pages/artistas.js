@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 export default function Artists() {
   let [artists, setArtists] = useState([]);
     useEffect(() => {
-        fetch('https://tattoomax-backend-9bd8.onrender.com/artists').then(res => res.json()).then(data => {setArtists(data)});
+        fetch('https://tattoomaxbackend.onrender.com/artists').then(res => res.json()).then(data => {setArtists(data)});
     }, [])
     
     const removeAccents = (str) => {

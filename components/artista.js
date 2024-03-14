@@ -19,7 +19,7 @@ const Artista = ({ name }) => {
     const dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
     const fetchHorario = async () => {
-        const data = await fetch('https://tattoomax-backend-9bd8.onrender.com/horarios')
+        const data = await fetch('https://tattoomaxbackend.onrender.com/horarios')
             .then(res => res.json());
         setHorario(data.find(horario => horario.artist === name));
     };
@@ -27,10 +27,10 @@ const Artista = ({ name }) => {
     const fetchOpiniones = async () => {
         try {
             const userId = sessionStorage.getItem('token');
-            const userResponse = await fetch('https://tattoomax-backend-9bd8.onrender.com/users');
+            const userResponse = await fetch('https://tattoomaxbackend.onrender.com/users');
             const userData = await userResponse.json();
             const user = userData.find(usuario => usuario._id === userId);
-            const opinionesResponse = await fetch('https://tattoomax-backend-9bd8.onrender.com/opiniones');
+            const opinionesResponse = await fetch('https://tattoomaxbackend.onrender.com/opiniones');
             const opinionesData = await opinionesResponse.json();
             const filteredOpiniones = opinionesData.filter(opinion => opinion.user === user.username);
             setOpiniones(filteredOpiniones);
@@ -40,14 +40,14 @@ const Artista = ({ name }) => {
     };
 
     const fetchArtist = async () => {
-        const data = await fetch('https://tattoomax-backend-9bd8.onrender.com/artists')
+        const data = await fetch('https://tattoomaxbackend.onrender.com/artists')
             .then(res => res.json());
         setArtista(data.find(artist => artist.name === name));
     };
 
     const recibeUserLog = async () => {
         const userId = sessionStorage.getItem('token');
-        const data = await fetch('https://tattoomax-backend-9bd8.onrender.com/users')
+        const data = await fetch('https://tattoomaxbackend.onrender.com/users')
             .then(res => res.json());
         setUserLog(data.find(user => user._id === userId));
     };

@@ -5,7 +5,7 @@ const HorarioLocal = () => {
     const [horario, setHorario] = useState([]);
 
     useEffect(() => {
-        fetch('https://tattoomax-backend-9bd8.onrender.com/horarioLocal')
+        fetch('https://tattoomaxbackend.onrender.com/horarioLocal')
             .then(res => res.json())
             .then(data => {
                 setHorario(data);

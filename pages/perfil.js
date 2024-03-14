@@ -39,7 +39,7 @@ export default function Perfil() {
   };
 
   const fetchUser = async (userId) => {
-    const response = await fetch('https://tattoomax-backend-9bd8.onrender.com/users');
+    const response = await fetch('https://tattoomaxbackend.onrender.com/users');
     const data = await response.json();
     setUser(data.find((usuario) => usuario._id === userId));
   };
@@ -47,10 +47,10 @@ export default function Perfil() {
   const fetchCitas = async () => {
     try {
       const userId = sessionStorage.getItem('token');
-      const userResponse = await fetch('https://tattoomax-backend-9bd8.onrender.com/users');
+      const userResponse = await fetch('https://tattoomaxbackend.onrender.com/users');
       const userData = await userResponse.json();
       const user = userData.find(usuario => usuario._id === userId);
-      const response = await fetch('https://tattoomax-backend-9bd8.onrender.com/citas');
+      const response = await fetch('https://tattoomaxbackend.onrender.com/citas');
       const data = await response.json();
       const userCitas = data.filter((cita) => cita.user === user.username);
       setCitas(userCitas);
@@ -62,10 +62,10 @@ export default function Perfil() {
   const fetchOpiniones = async () => {
     try {
       const userId = sessionStorage.getItem('token');
-      const userResponse = await fetch('https://tattoomax-backend-9bd8.onrender.com/users');
+      const userResponse = await fetch('https://tattoomaxbackend.onrender.com/users');
       const userData = await userResponse.json();
       const user = userData.find(usuario => usuario._id === userId);
-      const opinionesResponse = await fetch('https://tattoomax-backend-9bd8.onrender.com/opiniones');
+      const opinionesResponse = await fetch('https://tattoomaxbackend.onrender.com/opiniones');
       const opinionesData = await opinionesResponse.json();
       const filteredOpiniones = opinionesData.filter(opinion => opinion.user === user.username);
       setOpiniones(filteredOpiniones);

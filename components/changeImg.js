@@ -19,7 +19,7 @@ const ChangeImg = ({user, onClose }) => {
   async function submit(){
     if (imagen) {
         try {
-            const response = await fetch('https://tattoomax-backend-9bd8.onrender.com/users/' + user._id, {
+            const response = await fetch('https://tattoomaxbackend.onrender.com/users/' + user._id, {
                 method: 'PUT',
                 headers: {
                 'Content-Type': 'application/json',
@@ -31,13 +31,13 @@ const ChangeImg = ({user, onClose }) => {
             throw new Error('ERROR AL ACTUALIZAR LA IMAGEN');
             }
             
-            const opinionesResponse = await fetch(`https://tattoomax-backend-9bd8.onrender.com/opiniones`);
+            const opinionesResponse = await fetch(`https://tattoomaxbackend.onrender.com/opiniones`);
             const opinionesData = await opinionesResponse.json();
             const filteredOpiniones = opinionesData.filter(opinion => opinion.user === user.username);
 
             await Promise.all(filteredOpiniones.map(async (opinionUser) => {
               try {
-                const responseOp = await fetch('https://tattoomax-backend-9bd8.onrender.com/opiniones/' + opinionUser._id, {
+                const responseOp = await fetch('https://tattoomaxbackend.onrender.com/opiniones/' + opinionUser._id, {
                   method: 'PUT',
                   headers: {
                     'Content-Type': 'application/json',

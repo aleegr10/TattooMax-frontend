@@ -73,7 +73,7 @@ const AddOp = ({ onClose }) => {
     async function submit() {
         if (validateForm()) {
             try {
-                const response = await fetch('https://tattoomax-backend-9bd8.onrender.com/opiniones/add', {
+                const response = await fetch('https://tattoomaxbackend.onrender.com/opiniones/add', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({username: username, artist: artist.name, cita: cita, descripcion: descripcion})

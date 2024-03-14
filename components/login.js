@@ -32,7 +32,7 @@ const Login = () => {
     };
 
     async function recibeUserLog(idUser) {
-        const datos = await fetch('https://tattoomax-backend-9bd8.onrender.com/users').then(res => res.json()).then(data => { userLog = data.find(user => user._id === idUser) });
+        const datos = await fetch('https://tattoomaxbackend.onrender.com/users').then(res => res.json()).then(data => { userLog = data.find(user => user._id === idUser) });
         if (userLog.username === 'admin') {
             setIsAdmin(true);
         } else {
@@ -131,7 +131,7 @@ const Login = () => {
     const iniciarSesion = () => {
         const data = { username: username, password: pass };
 
-        fetch('https://tattoomax-backend-9bd8.onrender.com/users/signin', { method: 'POST', cache: 'no-cache', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+        fetch('https://tattoomaxbackend.onrender.com/users/signin', { method: 'POST', cache: 'no-cache', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
             .then(response => {
                 if (!response.ok) {
                     throw new Error('USUARIO O CONTRASEÑA INCORRECTOS');
@@ -163,7 +163,7 @@ const Login = () => {
                 telefono: telefono
             };
 
-            fetch('https://tattoomax-backend-9bd8.onrender.com/users/signup', {
+            fetch('https://tattoomaxbackend.onrender.com/users/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(datosRegistro)
@@ -180,7 +180,7 @@ const Login = () => {
                         password: datosRegistro.password
                     };
                     sessionStorage.setItem('token', data._id);
-                    return fetch('https://tattoomax-backend-9bd8.onrender.com/users/signin', {
+                    return fetch('https://tattoomaxbackend.onrender.com/users/signin', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(datosInicio)
