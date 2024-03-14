@@ -17,6 +17,11 @@ export default function PerfilAdmin() {
   const [isCitaOpen, setIsCitaOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
+  const recibeId = useCallback(() => {
+    const userId = sessionStorage.getItem('token');
+    fetchUser(userId);
+  }, []);
+
   useEffect(() => {
     fetchUsers();
     fetchCitas();
@@ -27,15 +32,10 @@ export default function PerfilAdmin() {
       router.push('/pagError');
     }
     recibeId();
-  }, [router]);
+  }, [recibeId, router]);
 
   const openAddCita = () => setIsCitaOpen(true);
   const closeAddCita = () => setIsCitaOpen(false);
-
-  const recibeId = () => {
-    const userId = sessionStorage.getItem('token');
-    fetchUser(userId);
-  };
 
   const fetchUser = async (userId) => {
     const response = await fetch('https://tattoomaxbackend.onrender.com/users');

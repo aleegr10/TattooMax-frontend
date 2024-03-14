@@ -21,6 +21,11 @@ export default function Perfil() {
   const [isEditaPassOpen, setIsEditaPassOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
+  const recibeId = useCallback(() => {
+    const userId = sessionStorage.getItem('token');
+    fetchUser(userId);
+  }, []);
+
   useEffect(() => {
     fetchCitas();
     fetchOpiniones();
@@ -33,13 +38,7 @@ export default function Perfil() {
     } else {
       router.push('/pagError');
     }
-  }, [router]);
-
-  const recibeId = () => {
-    const userId = sessionStorage.getItem('token');
-    fetchUser(userId);
-    
-  };
+  }, [recibeId, router]);
 
   const fetchUser = async (userId) => {
     const response = await fetch('https://tattoomaxbackend.onrender.com/users');
