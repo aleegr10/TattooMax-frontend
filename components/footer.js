@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
 
             <div className={style.div}>
-                <Link href="https://untap.org"><Image src={UNTAP} className={style.UNTAP} alt="UNTAP" width="220%" height="100%" /></Link>
+                <Link href="https://untap.org"><Image src={UNTAP} className={style.untap} alt="UNTAP" width="220%" height="100%" /></Link>
             </div>
         </div>
     )

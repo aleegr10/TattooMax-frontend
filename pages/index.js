@@ -76,11 +76,11 @@ export default function Home() {
                 <div className={style.carta}>
                   <div className={`${style.cara} ${hoveredIndex === index ? style.caraVisible : ''}`}>
                     {/* Aquí colocamos la imagen frontal */}
-                    <img src={imagen.frente.src} alt={`oferta${index + 1}`} width="400px" height="400px" />
+                    <Image src={imagen.frente.src} alt={`oferta${index + 1}`} width="400px" height="400px" />
                   </div>
                   <div className={`${style.caraDetras} ${hoveredIndex !== null && hoveredIndex !== index ? style.caraVisible : ''}`}>
                     {/* Aquí colocamos la imagen trasera */}
-                    <img src={imagen.detras.src} alt={`oferta${index + 1}Detras`} width="400px" height="400px" />
+                    <Image src={imagen.detras.src} alt={`oferta${index + 1}Detras`} width="400px" height="400px" />
                   </div>
                 </div>
               </div>

@@ -11,7 +11,7 @@ export default function PagError() {
         HA HABIDO UN ERROR AL INTENTAR ACCEDER A LA PÁGINA
       </h1>
       <h2>
-        Vuelva a la página <a href="/" style={{color: "blue"}}>inicial</a> o a otra página distinta
+        Vuelva a la página <Link href="/"><a style={{color: "blue"}}>inicial</a></Link> o a otra página distinta
       </h2><br/><br/><br/><br/><br/><br/><br/><br/>
       <div>
         <Footer/>

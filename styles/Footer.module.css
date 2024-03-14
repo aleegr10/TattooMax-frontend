@@ -23,6 +23,10 @@
     margin: 5px 0;
 }
 
+.untap{
+    cursor: pointer ;
+}
+
 @media (max-width: 768px) {
     .div {
         flex-basis: 100%;
