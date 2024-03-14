@@ -1,0 +1,138 @@
+.contenedor {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+    position: relative;
+}
+
+.popup{
+    background-color: black;
+    color: black;
+}
+
+.popupButton {
+    background-color: #212529;
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.popupButton:hover, .perfilButton:hover{
+    background-color: rgb(43, 43, 43);
+}
+
+.popupContent{
+    text-align: center;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modalContent{
+    background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.close {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    line-height: 20px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+.content {
+    padding: 10px 5px;
+}
+
+.input {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 70%;
+    background-color: #212529;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover{
+    background-color: rgb(43, 43, 43);
+}
+
+.cambiaForm {
+    background-color: transparent;
+    border: none;
+    color: #212529;
+    cursor: pointer;
+    float: right;
+}
+
+.perfilButton{
+    background-color: #212529;
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.buttonRemoveToken {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.buttonNoRemoveToken {
+    background-color: #797777;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        justify-content: center;
+    }
+}

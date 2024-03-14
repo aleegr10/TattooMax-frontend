@@ -1,0 +1,181 @@
+.datosUser {
+    margin: 20px;
+}
+
+.userAdmin {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    margin-right: 10px;
+}
+
+.datos {
+    line-height: 1.6;
+}
+
+.containerUsers{
+    margin: 20px;
+    text-align: center;
+}
+
+.users{
+    border: 1px solid black;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.user{
+    border-bottom: 1px solid rgb(32, 32, 32);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.imgUsers{
+    width: 30px;
+    border-radius: 100%;
+}
+
+.nameUsers{
+    font-size: 20px;
+}
+
+.containerCitas{
+    margin: 20px;
+    text-align: center;
+}
+
+.citas{
+    border: 1px solid black;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cita{
+    border-bottom: 1px solid rgb(32, 32, 32);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.openCita {
+    background-color: #202327;
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popupButton {
+    background-color: #202327;
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popupButton:hover, .perfilButton:hover{
+    background-color: rgb(66, 66, 66);
+}
+
+.buttonSi {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.buttonNo {
+    background-color: #797777;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.modalContainerRemoveUser {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalContentRemoveUser {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modalContent{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.close {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    line-height: 20px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+.button {
+    width: 70%;
+    background-color: #212529;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover{
+    background-color: rgb(43, 43, 43);
+}
+
+.modalContainerOk {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalContentOk {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}

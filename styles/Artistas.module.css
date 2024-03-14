@@ -1,0 +1,46 @@
+.block {
+    display: inline-block;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: black;
+    width: 85%;
+    height: 30%;
+    margin: 25px auto;
+    margin-bottom: 100px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    float: left;
+}
+
+.container:nth-child(2n) {
+    float: right;
+}
+
+.img {
+    height: 100px;
+    width: 100px;
+    float: left;
+    border-radius: 50px;
+}
+
+.edad,
+.email,
+.descripcion {
+    color: black;
+}
+
+.container:hover .edad,
+.container:hover .email,
+.container:hover .descripcion {
+    background-color: black;
+    color: white;
+}
+
+

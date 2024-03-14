@@ -1,0 +1,91 @@
+.p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.horariosContainer {
+    text-align: center;
+}
+
+.horariosTable {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.containerMapa,
+.containerAddConsulta {
+    width: 48%;
+    margin: 50px;
+}
+
+.mapa, .addConsulta {
+    width: 100%;
+    height: 400px;
+}
+
+.addConsulta {
+    text-align: center;
+    background-color: grey;
+    padding: 10px;
+    margin-top: 40px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button{
+    width: 70%;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    width: 60%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 880px) {
+    .containerMapa,
+    .containerAddConsulta {
+        width: 100%;
+    }
+}

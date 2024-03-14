@@ -1,0 +1,112 @@
+.cabeceraContainer {
+  position: relative;
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+.cabeceraContainer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url('../public/imagenLocal.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.cabecerah1 {
+  padding-top: 50px;
+  position: relative;
+  z-index: 2;
+  margin-top: 200px;
+}
+
+.cabecerah3 {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 50px;
+  padding-top: 25px;
+  opacity: 0.8;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.sliderContainer {
+  text-align: center;
+}
+
+.img {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.ofertaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.oferta {
+  position: relative;
+  width: 100%; 
+  max-width: 400px; 
+  height: auto;
+  margin: 20px;
+  perspective: 1000px;
+}
+
+.carta {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.cara,
+.caraDetras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.voltear .carta {
+  transform: rotateY(180deg);
+}
+
+.caraDetras {
+  transform: rotateY(180deg);
+}
+
+.caraVisible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.caraDetras .caraVisible {
+  transform: rotateY(0deg);
+}
+
+.informacion {
+  text-align: center;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline blue;
+  display: inline;
+}
+
+
