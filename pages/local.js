@@ -112,7 +112,7 @@ export default function Local() {
 
                             <div className={style.containeraddConsulta}>
                                 <h3 className={style.h3}>Para pedir cita o hacer cualquier consulta</h3>
-                                    <Image className={style.img} src={flecha} width="20px" height="20px"/>
+                                    <Image className={style.img} alt='flecha' src={flecha} width="20px" height="20px"/>
                                 <div className={style.addConsulta}>
                                     <div> 
                                         <div className={style.form}>

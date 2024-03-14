@@ -122,7 +122,7 @@ const Artista = ({ name, id }) => {
                             opiniones.map((opinion, index) => (
                             <div key={index} className={style.opinion}>
                                 <div className={style.divOp}>
-                                    <Image src={opinion.imgUser} className={style.imgUserOp} width="20px" height="20px"/>
+                                    <Image src={opinion.imgUser} alt='imgUser' className={style.imgUserOp} width="20px" height="20px"/>
                                     <b className={style.UserOp}>{opinion.user}</b>
                                 </div>
                                 <div className={style.divOp}><b className={style.TituloOp}>{opinion.titulo}</b></div>

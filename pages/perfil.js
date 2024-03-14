@@ -159,7 +159,7 @@ export default function Perfil() {
                         opiniones.map((opinion, index) => (
                             <div key={index} className={style.opinion}>
                             <div className={style.divOp}>
-                                <Image src={opinion.imgArtist} className={style.imgArtistOp} width="30px" height="30px"/>
+                                <Image src={opinion.imgArtist} alt='imgArtist' className={style.imgArtistOp} width="30px" height="30px"/>
                                 <b className={style.ArtistOp}>{opinion.artist}</b>
                             </div>
                             <div className={style.divOp}><b className={style.TituloOp}>{opinion.titulo}</b></div>

@@ -47,7 +47,7 @@ export default function Blog() {
           <p className={style.p}>La mejor manera en cómo cuidar tu Tattoo es siendo precavido. Tener siempre las manos aseadas y manipular lo menos posible la zona tatuada. Usar cremas hidratantes y cicatrizantes, que aceleren el proceso.</p>
         </div>
         <div>
-          <Image src={imagenEspalda} className={style.imagen} alt="Tatuaje en la espalda" width={600} height={350} />
+          <Image src={imagenEspalda} alt="Tatuaje en la espalda" className={style.imagen} width={600} height={350} />
           
           <h1 className={style.h1}>Según estudio tener tatuajes es bueno para la salud</h1>
           <p className={style.p}>¿Sabías que tener tatuajes es bueno para la salud? Actualmente existen estudios que confirman este posible beneficio a la salud, que hoy compartiremos contigo. 
@@ -88,7 +88,7 @@ export default function Blog() {
           Esta profesional de la medicina ha explicado que la muestra utilizada de 29 voluntarios es pequeña para arrojar resultados tan positivos. Además, aclara que en el estudio solo se utilizaron algunas sustancias que generan respuestas de defensa por parte del sistema inmune.</p>
         </div>
         <div>
-          <Image src={imagenBrazo} className={style.imagen} alt="Tatuaje en el brazo" width={600} height={350} />
+          <Image src={imagenBrazo} alt="Tatuaje en el brazo" className={style.imagen} width={600} height={350} />
           
           <h1 className={style.h1}>Historia de los tatuajes / Conoce de dónde vienen</h1>
           <p className={style.p}>Los tatuajes parecen algo moderno, pero en realidad la historia de los tatuajes se remonta siglas atrás. En un estudio de tatuajes, la vibra que se respira es de creatividad, arte y mucha tinta.

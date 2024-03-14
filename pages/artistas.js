@@ -41,7 +41,7 @@ export default function Artists() {
               return (
                 <Link key={artist} href={`../artists/${artist}`}>
                   <a className={style.container}>
-                    <Image src={artista.imagen} className={style.img} width="100px" height="100px"/>
+                    <Image src={artista.imagen} alt='imgArtist' className={style.img} width="100px" height="100px"/>
                     <h1 className={style.h1}>{artista.name}</h1><br/>
                     <p className={style.edad}>Edad: {artista.edad}</p>
                     <p className={style.email}>Email: {artista.email}</p>

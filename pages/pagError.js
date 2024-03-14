@@ -1,5 +1,6 @@
 import Nav from '../components/nav';
 import Footer from '../components/footer';
+import Link from 'next/link';
 
 export default function PagError() {
   return (

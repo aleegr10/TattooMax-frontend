@@ -12,7 +12,7 @@ const Nav = () => {
         <div className={`${style.container} ${showMenu ? style.shrink : ''}`}>
             <div>
                 <Link href="/">
-                    <Image className={style.image} src={logo} height="120%" width="200%" />
+                    <Image className={style.image} alt='logo' src={logo} height="120%" width="200%" />
                 </Link>
             </div>
             <div className={style.login}>
