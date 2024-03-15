@@ -85,7 +85,7 @@ const EditaDatos = ({user, onClose }) => {
         });
   
         if (!response.ok) {
-          error('ERROR AL ACTUALIZAR LOS DATOS');
+          throw new Error('ERROR AL ACTUALIZAR LOS DATOS');
         }
   
         user.username = username;
