@@ -38,7 +38,7 @@ const AddOp = ({ onClose }) => {
         if (!username.trim()) {
             errors.userError = 'INGRESE UN USUARIO';
         } else {
-            errors.tituloError = '';
+            errors.userError = '';
         }
     
         if (!artist.trim()) {
@@ -73,10 +73,11 @@ const AddOp = ({ onClose }) => {
     async function submit() {
         if (validateForm()) {
             try {
-                const response = await fetch('https://tattoomaxbackend.onrender.com/opiniones/add', {
+                
+                const response = await fetch('http://localhost:5000/citas/add', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({username: username, artist: artist.name, cita: cita, descripcion: descripcion})
+                    body: JSON.stringify({username: username, artist: artist, cita: cita, descripcion: descripcion})
                 });
 
                 if (!response.ok) {
@@ -87,7 +88,7 @@ const AddOp = ({ onClose }) => {
 
                 modalCitaOk.style.display = 'block';
 
-                let artista = artist.name.replace(/\s+/g, '');
+                let artista = artist.replace(/\s+/g, '');
                 artista = removeAccents(artista);
 
                 setTimeout(function () {
@@ -96,7 +97,6 @@ const AddOp = ({ onClose }) => {
                     modalCitaOk.style.display = 'none';
                     onClose();
                     window.location.href = '/artists/'+artista;
-
                 }, 2000);
             } catch (error) {
                 document.getElementById('addError').innerHTML = error.message;

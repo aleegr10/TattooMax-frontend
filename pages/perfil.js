@@ -114,10 +114,13 @@ export default function Perfil() {
         </div>
         {/* Mostrar un mensaje de carga mientras se cargan los datos */}
         {isLoading && 
-          <div className={style.loadingContainer}>
-            <div className={style.loading}></div>
-            <p>Cargando...</p>
-          </div>
+          <>
+            <div className={style.loadingContainer}>
+                <div className={style.loading}></div>
+                <p>Cargando...</p>
+            </div>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          </>
         }
         {/* Mostrar los datos del artista una vez que se han recibido */}
         {!isLoading && (

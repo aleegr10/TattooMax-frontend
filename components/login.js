@@ -47,7 +47,6 @@ const Login = () => {
     };
 
     const handleInputChange = (event) => {
-        console.log(event.currentTarget)
         const { id, value } = event.currentTarget;
     
         switch (id) {

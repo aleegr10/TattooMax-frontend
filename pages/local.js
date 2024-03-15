@@ -54,7 +54,6 @@ export default function Local() {
 
     const comprobarLog = () => {
         setUserLog(sessionStorage.getItem('token'));
-        console.log(userLog)
         if (userLog === undefined) {
             var modal = document.getElementById('myModal');
             modal.style.display = 'block';
@@ -79,10 +78,13 @@ export default function Local() {
             </div>
             {/* Mostrar un mensaje de carga mientras se cargan los datos */}
             {isLoading && 
-                <div className={style.loadingContainer}>
-                    <div className={style.loading}></div>
-                    <p>Cargando...</p>
-                </div>
+                <>
+                    <div className={style.loadingContainer}>
+                        <div className={style.loading}></div>
+                        <p>Cargando...</p>
+                    </div>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </>
             }
             {/* Mostrar los datos del artista una vez que se han recibido */}
             {!isLoading && (
@@ -112,7 +114,7 @@ export default function Local() {
 
                             <div className={style.containeraddConsulta}>
                                 <h3 className={style.h3}>Para pedir cita o hacer cualquier consulta</h3>
-                                    <Image className={style.img} alt='flecha' src={flecha} width="20px" height="20px"/>
+                                    <Image src={flecha} className={style.img} alt='flecha' width="20px" height="20px"/>
                                 <div className={style.addConsulta}>
                                     <div> 
                                         <div className={style.form}>

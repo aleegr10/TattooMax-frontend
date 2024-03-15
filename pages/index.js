@@ -23,12 +23,12 @@ export default function Home() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const slideImages = [
-    {url: imgLocal1, caption:'Slide 1'},
-    {url: imgTatu1, caption:'Slide 2'},
-    {url: imgLocal2, caption:'Slide 3'},
-    {url: imgTatu2, caption:'Slide 4'},
-    {url: imgLocal3, caption:'Slide 5'},
-    {url: imgTatu3, caption:'Slide 6'},
+    {url: imgLocal1, caption:'Slide1'},
+    {url: imgTatu1, caption:'Slide2'},
+    {url: imgLocal2, caption:'Slide3'},
+    {url: imgTatu2, caption:'Slide4'},
+    {url: imgLocal3, caption:'Slide5'},
+    {url: imgTatu3, caption:'Slide6'},
   ]
 
   const imagenesOferta = [

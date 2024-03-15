@@ -11,7 +11,6 @@ const ChangeImg = ({user, onClose }) => {
       const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = () => {
-        console.log(reader.result)
         setImagen(reader.result);
       };
     }
