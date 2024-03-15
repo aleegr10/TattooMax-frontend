@@ -7,12 +7,12 @@ import { Slide } from 'react-slideshow-image';
 import Link from 'next/link';
 import 'react-slideshow-image/dist/styles.css';
 
-import imgLocal1 from '/public/slider/local1.jpg';
-import imgTatu1 from '/public/slider/tatu1.jpg';
-import imgLocal2 from '/public/slider/local2.jpg';
-import imgTatu2 from '/public/slider/tatu2.jpg';
-import imgLocal3 from '/public/slider/local3.jpg';
-import imgTatu3 from '/public/slider/tatu3.jpg';
+import imgLocal1 from '/public/slider/local1.png';
+import imgTatu1 from '/public/slider/tatu1.png';
+import imgLocal2 from '/public/slider/local2.png';
+import imgTatu2 from '/public/slider/tatu2.png';
+import imgLocal3 from '/public/slider/local3.png';
+import imgTatu3 from '/public/slider/tatu3.png';
 import oferta from '/public/ofertas/OFERTA.png';
 import oferta1 from '/public/ofertas/oferta1.png';
 import oferta2 from '/public/ofertas/oferta2.png';

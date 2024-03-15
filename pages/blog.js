@@ -2,8 +2,8 @@ import style from '/styles/Blog.module.css';
 import Nav from '/components/nav';
 import Footer from '/components/footer';
 import Image from 'next/image';
-import imagenEspalda from '/public/blog/imagenEspalda.jpg';
-import imagenBrazo from '/public/blog/imagenBrazo.jpg';
+import imagenEspalda from '/public/blog/imagenEspalda.png';
+import imagenBrazo from '/public/blog/imagenBrazo.png';
 
 export default function Blog() {
   return (

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import imgDireccion from '/public/iconos/direccion.png'
 import imgTel from '/public/iconos/tel.png'
 import imgMovil from '/public/iconos/movil.png'
-import imgMail from '/public/iconos/mail.jpg'
+import imgMail from '/public/iconos/mail.png'
 import UNTAP from '/public/iconos/UNTAP.png'
 import Image from 'next/image';
 
