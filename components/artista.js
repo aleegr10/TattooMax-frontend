@@ -1,7 +1,7 @@
 import { useState, useEffect, Fragment } from 'react';
 import Image from 'next/image';
-import style from '../styles/Artista.module.css';
-import AddCom from './addOp';
+import style from '/styles/Artista.module.css';
+import AddCom from '/components/addOp';
 
 const Artista = ({ name, id }) => {
     const [artista, setArtista] = useState({});

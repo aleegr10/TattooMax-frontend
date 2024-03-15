@@ -1,4 +1,4 @@
-import style from '../styles/Perfil.module.css';
+import style from '/styles/Perfil.module.css';
 import { useState } from 'react';
 
 const EditaPass = ({ user, onClose }) => {

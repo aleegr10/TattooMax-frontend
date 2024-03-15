@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Login from './login';
-import style from '../styles/Nav.module.css';
-import logo from '../public/logo.png';
+import Login from '/components/login';
+import style from '/styles/Nav.module.css';
+import logo from '/public/logo.png';
 
 const Nav = () => {
     const [showMenu, setShowMenu] = useState(false);

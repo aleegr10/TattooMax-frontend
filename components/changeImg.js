@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import style from '../styles/Perfil.module.css'
+import style from '/styles/Perfil.module.css'
 
 const ChangeImg = ({user, onClose }) => {
   const [imagen, setImagen] = useState();

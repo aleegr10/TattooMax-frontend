@@ -2,11 +2,11 @@ import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
-import AddCita from '../components/addCita'
-import Nav from '../components/nav';
-import Footer from '../components/footer';
+import AddCita from '/components/addCita'
+import Nav from '/components/nav';
+import Footer from '/components/footer';
 import Popup from 'reactjs-popup';
-import style from '../styles/PerfilAdmin.module.css';
+import style from '/styles/PerfilAdmin.module.css';
 
 export default function PerfilAdmin() {
   const router = useRouter();

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import style from '../styles/Local.module.css';
+import style from '/styles/Local.module.css';
 
 const HorarioLocal = () => {
     const [horario, setHorario] = useState([]);

@@ -2,12 +2,12 @@ import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
-import Nav from '../components/nav';
-import Footer from '../components/footer';
-import ChangeImg from '../components/changeImg'
-import EditaDatos from '../components/editaDatos';
-import EditaPass from '../components/editaPass';
-import style from '../styles/Perfil.module.css';
+import Nav from '/components/nav';
+import Footer from '/components/footer';
+import ChangeImg from '/components/changeImg'
+import EditaDatos from '/components/editaDatos';
+import EditaPass from '/components/editaPass';
+import style from '/styles/Perfil.module.css';
 
 export default function Perfil() {
   const router = useRouter();

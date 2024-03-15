@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Nav from '../components/nav';
-import Footer from '../components/footer';
-import HorarioLocal from '../components/horarioLocal';
-import flecha from '../public/iconos/flecha.png';
-import style from '../styles/Local.module.css';
+import Nav from '/components/nav';
+import Footer from '/components/footer';
+import HorarioLocal from '/components/horarioLocal';
+import flecha from '/public/iconos/flecha.png';
+import style from '/styles/Local.module.css';
 
 export default function Local() {
     const [userLog, setUserLog] = useState();

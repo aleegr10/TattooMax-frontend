@@ -1,4 +1,4 @@
-import style from '../styles/PerfilAdmin.module.css';
+import style from '/styles/PerfilAdmin.module.css';
 import { useState } from 'react';
 
 const AddOp = ({ onClose }) => {

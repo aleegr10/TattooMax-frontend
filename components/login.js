@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import style from '../styles/Login.module.css';
+import style from '/styles/Login.module.css';
 
 const Login = () => {
     const [isRegistred, setIsRegistred] = useState(true);

@@ -1,22 +1,22 @@
 import Image from 'next/image'
-import style from '../styles/Home.module.css'
-import Nav from '../components/nav'
-import Footer from '../components/footer'
+import style from '/styles/Home.module.css'
+import Nav from '/components/nav'
+import Footer from '/components/footer'
 import { useState } from 'react';
 import { Slide } from 'react-slideshow-image';
 import Link from 'next/link';
 import 'react-slideshow-image/dist/styles.css';
 
-import imgLocal1 from '../public/slider/local1.jpg';
-import imgTatu1 from '../public/slider/tatu1.jpg';
-import imgLocal2 from '../public/slider/local2.jpg';
-import imgTatu2 from '../public/slider/tatu2.jpg';
-import imgLocal3 from '../public/slider/local3.jpg';
-import imgTatu3 from '../public/slider/tatu3.jpg';
-import oferta from '../public/ofertas/OFERTA.png';
-import oferta1 from '../public/ofertas/oferta1.png';
-import oferta2 from '../public/ofertas/oferta2.png';
-import oferta3 from '../public/ofertas/oferta3.png';
+import imgLocal1 from '/public/slider/local1.jpg';
+import imgTatu1 from '/public/slider/tatu1.jpg';
+import imgLocal2 from '/public/slider/local2.jpg';
+import imgTatu2 from '/public/slider/tatu2.jpg';
+import imgLocal3 from '/public/slider/local3.jpg';
+import imgTatu3 from '/public/slider/tatu3.jpg';
+import oferta from '/public/ofertas/OFERTA.png';
+import oferta1 from '/public/ofertas/oferta1.png';
+import oferta2 from '/public/ofertas/oferta2.png';
+import oferta3 from '/public/ofertas/oferta3.png';
 
 
 export default function Home() {

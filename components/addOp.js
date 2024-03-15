@@ -1,4 +1,4 @@
-import style from '../styles/Artista.module.css';
+import style from '/styles/Artista.module.css';
 import { useState } from 'react';
 
 const AddOp = ({ user, artist, onClose }) => {
