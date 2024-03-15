@@ -134,7 +134,7 @@ const Login = () => {
         fetch('https://tattoomaxbackend.onrender.com/users/signin', { method: 'POST', cache: 'no-cache', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('USUARIO O CONTRASEÑA INCORRECTOS');
+                    error('USUARIO O CONTRASEÑA INCORRECTOS');
                 }
                 return response.json();
             })
@@ -170,7 +170,7 @@ const Login = () => {
             })
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error('USUARIO O EMAIL YA REGISTRADOS');
+                        error('USUARIO O EMAIL YA REGISTRADOS');
                     }
                     return response.json();
                 })
@@ -188,7 +188,7 @@ const Login = () => {
                 })
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error('Error al iniciar sesión');
+                        error('Error al iniciar sesión');
                     }
                     return response.json();
                 })

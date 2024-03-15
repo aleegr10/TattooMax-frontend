@@ -29,7 +29,7 @@ const ChangeImg = ({user, onClose }) => {
             });
 
             if (!response.ok) {
-            throw new Error('ERROR AL ACTUALIZAR LA IMAGEN');
+            error('ERROR AL ACTUALIZAR LA IMAGEN');
             }
             
             const opinionesResponse = await fetch(`https://tattoomaxbackend.onrender.com/opiniones`);
@@ -47,11 +47,11 @@ const ChangeImg = ({user, onClose }) => {
                 });
             
                 if (!responseOp.ok) {
-                  throw new Error('ERROR AL ACTUALIZAR LA IMAGEN');
+                  error('ERROR AL ACTUALIZAR LA IMAGEN');
                 }
               } catch (error) {
                 console.error(error);
-                throw new Error('ERROR AL ACTUALIZAR LA IMAGEN');
+                error('ERROR AL ACTUALIZAR LA IMAGEN');
               }
             }));
     

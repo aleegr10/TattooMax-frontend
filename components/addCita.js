@@ -80,7 +80,7 @@ const AddOp = ({ onClose }) => {
                 });
 
                 if (!response.ok) {
-                    throw new Error('ERROR AL AÑADIR CITA');
+                    error('ERROR AL AÑADIR CITA');
                 }
 
                 var modalCitaOk = document.getElementById('modalCitaOk');

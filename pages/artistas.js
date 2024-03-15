@@ -12,7 +12,7 @@ export default function Artists() {
   useEffect(() => {
       fetch('https://tattoomaxbackend.onrender.com/artists').then(res => res.json()).then(data => {setArtists(data)});
       setIsLoading(false)
-  })
+  }, [])
   
   const removeAccents = (str) => {
       return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');

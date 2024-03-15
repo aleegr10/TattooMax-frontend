@@ -60,7 +60,7 @@ const AddOp = ({ user, artist, onClose }) => {
                 });
 
                 if (!response.ok) {
-                    throw new Error('ERROR AL AÑADIR OPINIÓN');
+                    error('ERROR AL AÑADIR OPINIÓN');
                 }
 
                 var modalOpOk = document.getElementById('modalOpOk');
