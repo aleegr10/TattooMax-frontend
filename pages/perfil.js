@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -30,7 +30,6 @@ export default function Perfil() {
     fetchCitas();
     fetchOpiniones();
     recibeId();
-    recibeUserLog();
     
     const userRole = localStorage.getItem('userRole');
     if (userRole === 'user') {
